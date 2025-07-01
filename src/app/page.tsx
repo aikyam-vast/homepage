@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { TextColor } from "@/components/ui/text-color";
 import { PhotoGallery } from "@/components/ui/gallery";
 import { cn } from "@/lib/utils";
@@ -21,12 +22,14 @@ export default function GalleryPage() {
           </p>
         </div>
         <PhotoGallery />
-      </main>
-      <div className="flex w-full justify-center">
-      <Button>
-        Our Latest Projects
-      </Button>
+        <div className="flex w-full justify-center">
+      <Link href="https://on-dot-next.vercel.app" target="_blank" rel="noopener noreferrer" passHref>
+        <Button asChild>
+          <span>Visit our OnDot Next Project</span>
+        </Button>
+      </Link>
       </div>
+      </main>
     </div>
   );
 }

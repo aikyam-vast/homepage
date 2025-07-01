@@ -79,7 +79,7 @@ export const PhotoGallery = ({
       y: "15px",
       zIndex: 50, // Highest z-index (on top)
       direction: "left" as Direction,
-      src: "https://images.pexels.com/photos/32025694/pexels-photo-32025694/free-photo-of-romantic-wedding-in-ancient-ruins.jpeg",
+      src: "/images/IMG_5777.jpg",
     },
     {
       id: 2,
@@ -88,7 +88,7 @@ export const PhotoGallery = ({
       y: "32px",
       zIndex: 40,
       direction: "left" as Direction,
-      src: "https://images.pexels.com/photos/31596551/pexels-photo-31596551/free-photo-of-winter-scene-with-lake-view-in-van-turkiye.jpeg",
+      src: "/images/IMG_1122.jpeg",
     },
     {
       id: 3,
@@ -97,7 +97,7 @@ export const PhotoGallery = ({
       y: "8px",
       zIndex: 30,
       direction: "right" as Direction,
-      src: "https://images.pexels.com/photos/31890053/pexels-photo-31890053/free-photo-of-moody-portrait-with-heart-shaped-light.jpeg",
+      src: "/images/IMG_1234.jpg",
     },
     {
       id: 4,
@@ -106,7 +106,7 @@ export const PhotoGallery = ({
       y: "22px",
       zIndex: 20,
       direction: "right" as Direction,
-      src: "https://images.pexels.com/photos/19936068/pexels-photo-19936068/free-photo-of-women-sitting-on-hilltop-with-clouds-below.jpeg",
+      src: "/images/IMG_1108.jpeg",
     },
     {
       id: 5,
@@ -115,15 +115,15 @@ export const PhotoGallery = ({
       y: "44px",
       zIndex: 10, // Lowest z-index (at bottom)
       direction: "left" as Direction,
-      src: "https://images.pexels.com/photos/20494995/pexels-photo-20494995/free-photo-of-head-of-peacock.jpeg",
+      src: "/images/IMG_1096.jpeg",
     },
   ];
 
   return (
     <div className="mt-40 relative">
        <div className="absolute inset-0 max-md:hidden top-[200px] -z-10 h-[300px] w-full bg-transparent bg-[linear-gradient(to_right,#57534e_1px,transparent_1px),linear-gradient(to_bottom,#57534e_1px,transparent_1px)] bg-[size:3rem_3rem] opacity-20 [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)] dark:bg-[linear-gradient(to_right,#a8a29e_1px,transparent_1px),linear-gradient(to_bottom,#a8a29e_1px,transparent_1px)]"></div>
-      <h3 className="z-20 mx-auto max-w-2xl justify-center bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text py-3 text-center text-4xl text-transparent dark:bg-gradient-to-r dark:from-slate-100 dark:via-slate-200 dark:to-slate-100 dark:bg-clip-text md:text-7xl">
-      <span className="text-rose-500">Our Journey</span>
+      <h3 className="z-20 mx-auto max-w-2xl justify-center bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text py-3 text-center text-xl text-transparent dark:bg-gradient-to-r dark:from-slate-100 dark:via-slate-200 dark:to-slate-100 dark:bg-clip-text md:text-5xl">
+      <span className="text-rose-400">Great things are Coming ...</span>
       </h3>
       <div className="relative mb-8 h-[350px] w-full items-center justify-center lg:flex overflow-hidden">
         <motion.div
