@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { TextColor } from "@/components/ui/text-color";
 import { PhotoGallery } from "@/components/ui/gallery";
-import { cn } from "@/lib/utils";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 
@@ -14,7 +14,13 @@ export default function GalleryPage() {
       <main className="relative z-10 space-y-20 pb-20 px-0">
         <TextColor />
         <div className="flex justify-center">
-          <img src="/Aikyam_Logo.png" alt="Aikyam Logo" className="w-full h-auto max-w-screen-lg px-6 md:px-12 lg:px-20" />
+          <Image
+            src="/Aikyam_Logo.png"
+            alt="Aikyam Logo"
+            width={1200}
+            height={400}
+            className="w-full h-auto max-w-screen-lg px-6 md:px-12 lg:px-20"
+          />
         </div>
         <div className="px-6 md:px-12 lg:px-20 text-center">
           <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto">
