@@ -55,7 +55,7 @@ export const PhotoGallery = ({
       scale: 1,
       // Keep the same z-index throughout animation
     }),
-    visible: (custom: { x: any; y: any; order: number }) => ({
+    visible: (custom: { x: string; y: string; order: number }) => ({
       x: custom.x,
       y: custom.y,
       rotate: 0, // No rotation
@@ -211,13 +211,9 @@ export const Photo = ({
     const randomRotation =
       getRandomNumberInRange(1, 4) * (direction === "left" ? -1 : 1);
     setRotation(randomRotation);
-  }, []);
+  }, [direction]);
 
-  function handleMouse(event: {
-    currentTarget: { getBoundingClientRect: () => any };
-    clientX: number;
-    clientY: number;
-  }) {
+  function handleMouse(event: React.MouseEvent<HTMLDivElement>) {
     const rect = event.currentTarget.getBoundingClientRect();
     x.set(event.clientX - rect.left);
     y.set(event.clientY - rect.top);
